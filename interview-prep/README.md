@@ -12,6 +12,25 @@ Everything here is built from the [AICTE listing](https://internship.aicte-india
 | **[03-synopsis-and-written-answers.md](03-synopsis-and-written-answers.md)** | The synopsis the portal asks for, plus pre-written answers for screening questions | Tonight if they ask in writing |
 | **[04-cheatsheet.md](04-cheatsheet.md)** | One page: formulas, numbers, five killer points, two questions | Tomorrow morning |
 | **[code/](code/)** | A working, unit-tested reimplementation of CubeTwin's published equations — your evidence if they set a take-home task | Tonight, skim; run it once |
+| **[pdf/](pdf/)** | Print/phone-ready PDFs of all four documents — see below | Whenever you want it offline |
+
+## PDFs
+
+Everything above is also rendered to PDF, so you can read it on your phone tonight or print the cheat sheet:
+
+| PDF | Pages | Use it for |
+|---|---|---|
+| `pdf/CubeTwin-Interview-Pack.pdf` | 23 | The whole pack in one file — cover page, clickable contents, running chapter headers, page numbers |
+| `pdf/01-interview-brief.pdf` | 11 | The main brief on its own |
+| `pdf/02-skills-mapping.pdf` | 5 | Skills reframing and copy-paste blocks |
+| `pdf/03-synopsis-and-written-answers.pdf` | 4 | Synopsis and written answers to paste into the portal |
+| `pdf/04-cheatsheet.pdf` | 2 | **Print this one** and keep it beside you during the call |
+
+Regenerate them after editing any markdown:
+
+```bash
+python3 tools/md_to_pdf.py       # needs: pip3 install reportlab fonttools
+```
 
 ## Do these three things in the next hour
 1. Read `01-interview-brief.md` **section 1** (60-second version) and **section 5** (the numbers).
